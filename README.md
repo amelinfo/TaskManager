@@ -1,69 +1,42 @@
-🚀 Task Manager API
-A complete REST API for task management developed with Spring Boot 3 and PostgreSQL.
+# TaskManger
 
+TaskManger is a simple task management application to help you create, track, and complete tasks.
 
+## Features
 
+- Create, edit, and delete tasks
+- Mark tasks as completed or pending
+- Organize tasks by priority or due date
+- Simple and clean user interface
 
-📋 Features
-✅ Complete CRUD - Create, read, update, and delete tasks
+## Installation
 
-✅ Data Validation - Robust validations with Jakarta Validation
+1. Clone the repository:
+   ```
+   git clone https://github.com/amelinfo/TaskManger.git
+   ```
+2. Change into the project directory:
+   ```
+   cd TaskManger
+   ```
+3. Install dependencies (example for Node.js projects):
+   ```
+   npm install
+   ```
 
-✅ Error Handling - Appropriate HTTP responses (200, 201, 400, 404, 500)
+## Usage
 
-✅ PostgreSQL Database - Data persistence with JPA
+Start the application (example):
+```
+npm start
+```
 
-✅ Docker Ready - Configuration with Docker Compose
+Open your browser and navigate to http://localhost:3000 (or the port configured in the project).
 
-✅ RESTful API - Endpoints following REST best practices
+## Contributing
 
+Contributions are welcome. Please fork the repository, create a branch for your feature or fix, and open a pull request describing your changes.
 
+## License
 
-🛠️ Technologies Used
-Java 21 - Programming language
-
-Spring Boot 3 - Main framework
-
-Spring Data JPA - Data persistence
-
-PostgreSQL - Database
-
-Docker - Containerization
-
-
-
-🚀 Installation and Execution
-Prerequisites
-Java 21+
-
-Maven 3.6+
-
-Docker and Docker Compose
-
-The application will be available at: http://localhost:8080
-
-
-
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-👤 Author
-Amel Tleb
-
-GitHub: @amelinfo
-
-
-🙏 Acknowledgments
-Spring Boot team
-
-PostgreSQL community
-
-Docker community
-
-
-
-
-Maven - Dependency management
-
-Jakarta Validation - Data validation
+This project is licensed under the MIT License. See the LICENSE file for details.

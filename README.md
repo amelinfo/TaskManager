@@ -19,19 +19,66 @@ TaskManger is a simple task management application to help you create, track, an
    ```
    cd TaskManger
    ```
-3. Install dependencies (example for Node.js projects):
+3. Set up database with Docker:
    ```
-   npm install
+   # Start PostgreSQL
+   docker-compose up -d
+   ```
+4. Run the application:
+   ```
+   # With Maven Wrapper
+   ./mvnw spring-boot:run
+
+   # Or with regular Maven
+   mvn spring-boot:run
    ```
 
-## Usage
+##  API Endpoints
 
-Start the application (example):
-```
-npm start
-```
+1. Get all tasks:
 
-Open your browser and navigate to http://localhost:3000 (or the port configured in the project).
+   ```
+   GET /api/tasks
+   ```
+2. Get task by ID :
+   ```
+   GET /api/tasks/{id}
+   ```
+3. Create a new Task :
+
+   ```
+   POST /api/tasks
+   Content-Type: application/json
+   {
+    "id": "12345678-1234-1234-1234-123456789012",
+    "title": "New task",
+    "description": "Task description",
+    "status": "PENDING"
+   }
+   ```
+4. Update an existing Task :
+
+   ```
+   PUT /api/tasks/{id}
+   Content-Type: application/json
+
+   {
+    "id": "5508e177-2d92-49e3-bd7b-7106d6447e38",
+    "title": "Updated title",
+    "description": "Updated description",
+    "status": "COMPLETED"
+   }
+   ```
+
+5. Delete a task :
+   ```
+   DELETE /api/tasks/{id}
+   ```
+
+
+
+
+The application will be available at: http://localhost:8080
 
 ## Contributing
 

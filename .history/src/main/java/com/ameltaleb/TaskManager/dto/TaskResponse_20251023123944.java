@@ -1,0 +1,6 @@
+public record TaskResponse(
+        UUID id, 
+        String title, 
+        String description, 
+        TaskStatus status, LocalDateTime createdAt) {
+}

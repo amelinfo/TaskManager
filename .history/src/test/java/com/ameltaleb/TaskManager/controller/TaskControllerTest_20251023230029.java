@@ -1,0 +1,50 @@
+package com.ameltaleb.TaskManager.controller;
+
+import java.util.UUID;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+@SpringBootTest
+@AutoConfigureMockMvc
+public class TaskControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private ObjectMapper objectMapper;
+
+    private final UUID EXISTING_TASK_ID = UUID.fromString("5508e177-2d92-49e3-bd7b-7106d6447e38");
+    private final UUID NON_EXISTING_TASK_ID = UUID.fromString("5508e177-2d92-49e3-bd7b-7106d6447e99");
+
+    @Test
+    void testCreateTask() {
+
+    }
+
+    @Test
+    void testDeleteTask() {
+
+    }
+
+    @Test
+    void testGetAllTasks() {
+
+    }
+
+    @Test
+    void testGetTaskById() {
+
+    }
+
+    @Test
+    void testUpdateTask() {
+
+    }
+}

@@ -1,0 +1,28 @@
+# ===============================
+# POSTGRESQL DATABASE
+# ===============================
+spring.datasource.url=jdbc:postgresql://localhost:5432/taskdb
+spring.datasource.username=postgres
+spring.datasource.password=password
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# ===============================
+# JPA / HIBERNATE
+# ===============================
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+
+# ===============================
+# SQL INITIALIZATION
+# ===============================
+spring.sql.init.mode=always
+spring.jpa.defer-datasource-initialization=true
+
+# ===============================
+# SERVER
+# ===============================
+server.port=8080
+server.error.include-message=always

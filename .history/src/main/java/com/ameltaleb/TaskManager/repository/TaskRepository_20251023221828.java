@@ -1,0 +1,9 @@
+package com.ameltaleb.TaskManager.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+public interface TaskRepository extends CrudRepository {
+
+    
+} 

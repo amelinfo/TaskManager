@@ -14,21 +14,18 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 import com.ameltaleb.TaskManager.module.Status;
 
-@ToString
-@AllArgsConstructor
-@Setter
-@Getter
 @Entity
 @Table(name = "tasks")
 public class Task {
 
+    @all
+    @Setter
+    @Getter
     @Id
     private UUID id;
 
@@ -63,11 +60,9 @@ public class Task {
     }
 
     public Task(String title, String description, Status status) {
-        this.id = UUID.randomUUID();
         this.title = title;
         this.description = description;
         this.status = status;
-        this.createdAt = LocalDateTime.now();
     }
 
 	

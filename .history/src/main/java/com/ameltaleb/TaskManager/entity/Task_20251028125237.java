@@ -17,11 +17,10 @@ import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
+import lombok
 
 import com.ameltaleb.TaskManager.module.Status;
 
-@ToString
 @AllArgsConstructor
 @Setter
 @Getter
@@ -63,11 +62,9 @@ public class Task {
     }
 
     public Task(String title, String description, Status status) {
-        this.id = UUID.randomUUID();
         this.title = title;
         this.description = description;
         this.status = status;
-        this.createdAt = LocalDateTime.now();
     }
 
 	

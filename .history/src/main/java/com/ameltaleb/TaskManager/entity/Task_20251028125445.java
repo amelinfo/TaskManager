@@ -21,7 +21,6 @@ import lombok.ToString;
 
 import com.ameltaleb.TaskManager.module.Status;
 
-@ToString
 @AllArgsConstructor
 @Setter
 @Getter
